@@ -96,15 +96,15 @@
         else{
             $formatted_date = date('jS F, Y', strtotime($date));
             echo "Today's ( $formatted_date ) activities are -";
+            $index = 0;
             foreach ($data as $key => $commit) {
-                
                 $message = $commit['commit']['message'];
                 if(strpos($message, 'Merge branch') === 0){
                     continue; //skip merge commits
                 }
                 $link = $commit['html_url'];
-                $key++;
-                echo "<p>$key) $message <br/>- $link</p>";
+                $index++;
+                echo "<p>$index) $message <br/>- $link</p>";
             }
         }
         }
