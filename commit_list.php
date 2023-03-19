@@ -49,7 +49,7 @@
     
     <div class="input-group mb-3 col-3">
     <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Date (YYYY-MM-DD):</span>
+        <span class="input-group-text" id="basic-addon1">Date (DD-MM-YYYY):</span>
     </div>
     <input type="text" class="form-control" id="date" name="date" required aria-label="Date" aria-describedby="basic-addon1">
     </div>
